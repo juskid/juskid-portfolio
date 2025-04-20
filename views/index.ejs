@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Kidchob's Portfolio</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include('navbar') %>
+    <div class="hero">
+        <img src="https://cdn.prod.website-files.com/663587911211ec0f63465711/663587911211ec0f634657cf_arrow.svg" alt="" class="arrow">
+        <div class="index-wrapper">
+            <div class="w-h1">
+                <h1 class="hero-h1 home">Hi, my</h1>
+            </div>
+            <div class="w-h1 bottom-padding">
+                <h1 class="hero-h1 home">name is <strong>Justin</strong></h1>
+            </div>
+            <div class="index-paragraph home-subhead">
+                <p class="p3">I'm a Web Developer with skills in design, development, and programming.<br>Nice to meet you!</p>
+            </div>
+        </div>
+    </div> 
+    <div class="homepage">
+        <section class="home-section">
+            <div class="projects-container">
+                <% if (projects) {%> <% projects.forEach(project => { %> <%-
+                    include('partials/projectCard', {project}) %> <% }); %> <% } %>        
+            </div>
+            <%- include('footer') %>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<a href="/projects/<%= project.id %>" class="card-project-link">
+    <div class="project-card clearfix" style="background-image: url('<%= project.background %>');background-size: 100% 100%;">
+        <div class="image-container clearfix">
+            <img
+                src='<%= project.image %>'
+                alt="<%= project.name %>"
+                class="project-image"
+                style="
+                    width: 80px;
+                    height: 70px;"
+            />
+        </div>
+        <h3 class="project-title"><%= project.name %></h3>
+        <p class="project-label">Type(s):</p>
+        <ul class="project-types">
+            <% if (project.types) { %> <% project.types.forEach(type => { %>
+            <li class="project-type-project"><%= type %></li>
+            <% }); %> <% } %>
+        </ul>
+    </div>
+</a>
