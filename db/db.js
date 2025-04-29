@@ -5,11 +5,11 @@ const projects = [
         text: `This project is a modern, responsive redesign of the Walmart website, built using React. The goal was to improve the user experience with a clean, component-based architecture while maintaining core e-commerce functionality. The app features two main pages—a visually refreshed Home page and a Shop page—both accessible via a persistent navigation bar. The Shop page dynamically pulls product data from the FakeStore API and displays it using custom product card components, each with quantity controls and an “Add to Cart” button to enhance usability.
 The shopping cart experience is integrated directly into the navigation bar, showing real-time updates to the item count and providing a smooth UI flow toward checkout. The redesign emphasizes improved layout, streamlined user interaction, and responsiveness across devices. The application is fully styled with modern UI design principles and showcases both front-end development skills and a thoughtful approach to redesigning a real-world retail interface.
 `,
-        url: "",
+        url: "https://walmart-database-production.up.railway.app",
         types: ["Node.js", "Express", "PG", "EJS"],
         background: "/images/grey1.png",
         image: "/images/walmart-logo.png",
-        images: ["/images/walmart-logo.png","/images/walmart-logo.png"],
+        images: ["/images/walmart/walmart-1.png","/images/walmart/walmart-2.png"],
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ Messages are stored in-memory using an array and are dynamically rendered on the
         types: ["Node.js", "Express", "EJS"],
         background: "/images/grey2.png",
         image: "/images/logo-message.png",
-        images: ["/images/walmart-logo.png",],
+        images: ["/images/message-board/message1.png","/images/message-board/message2.png"],
     },
     {
         id: 3,
